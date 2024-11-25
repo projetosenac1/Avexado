@@ -109,19 +109,58 @@ a{
     padding: 15px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .links-menu-inferior{
     display: flex;
     flex-direction: row;
+    width: 40%;
 }
 
-.links-rodape{
+.links-rodape-1{
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
+}
+
+.links-rodape-2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.cadastro-rodape{
+    width: 40%;
 }
 
 .redes-sociais{
     display: flex;
     flex-direction: row;
+    justify-content: left;
+    /* justify-content: space-evenly; */
+    margin-top: 20px;
+}
+
+.p-inscreva-se-rodape{
+    font-size: 16px;
+}
+
+.rede-1{
+    margin-right: 15px;
+}
+
+.icon-rede-social{
+    width: 30px;
+}
+
+.instagram .wpp .email .youtube{
+    display: flex;
+    flex-direction: row;  
+    align-items: center; 
+}
+
+.letra{
+    font-size: 22px;
 }
