@@ -54,6 +54,9 @@ a{
 .termos{
     background-color: #FFEBB9;
     justify-content: start;
+    padding: 50px;
+    line-height: 2;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .letras{
