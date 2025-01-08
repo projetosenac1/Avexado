@@ -4,6 +4,14 @@
         <meta charset="utf-8">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css">
+
+        <!-- Kauã -->
+
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+         
+        <!-- Kauã -->
     </head>
 
     <body>
@@ -64,74 +72,86 @@
                 </div>
             </div>
 
-            <div class="prof-destaque">
-                <div class="prof-destaque-h2" > <h2>Nossos Profissionais</h2> </div>
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Categorias</button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <a href="#">Mecânico</a>
-                      <a href="#">Eletricista</a>
-                      <a href="#">Pedreiro</a>
-                      <a href="#">Pintor</a>
-                      <a href="#">Advogado</a>
-                      <a href="#">Professor</a>
-                      <a href="#">Arquiteto</a>
-                      <a href="#">Marceneiro</a>
-                    </div>
-                  </div>
-                <div class="slide-profissionais">
-                    <div class="responsive">
-                        <div class="gallery">
-                            <img src="https://i.imgur.com/B9sVakS.png" alt="Richard">
-                            <div class="gallery-2"> <img src="https://i.imgur.com/zhNxuID.png" alt="Ricardo"> </div>
-                          <div class="desc">Richard Ricardo <br> <br> Richard Ricardo é um pintor dedicado, cuja habilidade e paixão pela arte se refletem em cada obra que cria. Com um olhar atento aos detalhes e uma técnica apurada, ele transforma paredes simples em verdadeiras obras de arte. Sua dedicação ao ofício e busca pela perfeição fazem dele um artista admirado, <br> capaz de criar ambientes únicos e sofisticados.
+              <!-- Kauã -->
 
-                          </div>
-                        </div>
-                        <div> 
-                            <button class="botao-contratar">Contratar</button> 
-                        </div>
-                      </div>
-                      
-                      <div class="responsive">
-                        <div class="gallery">
-                            <img src="https://i.imgur.com/N2zJvJe.png" alt="Pedro">
-                            <div class="gallery-2"> <img src="https://i.imgur.com/RKqpi9k.png" alt="Alves"> </div>
-                          <div class="desc">Pedro Alves <br> <br> Pedro Alves é um trabalhador incansável e altamente qualificado, conhecido por sua versatilidade e dedicação à excelência em tudo o que faz. Seja no campo da construção civil ou nos serviços gerais, ele sempre se dedica ao máximo para entregar resultados notáveis. Sua ética e empenho fazem dele um profissional de confiança, sempre cumprindo suas responsabilidades com competência.</div>
-                        </div>
-                        <div> 
-                            <button class="botao-contratar">Contratar</button> 
-                        </div>
-                      </div>
-                      
-                      <div class="responsive">
-                        <div class="gallery">
-                            <img src="https://i.imgur.com/7fmKd0M.png" alt="Gabriela">
-                            <div class="gallery-2"> <img src="https://i.imgur.com/1OqnXHm.png" alt="Ferreira"> </div>
-                          <div class="desc">Gabriela Ferreira <br> <br> Gabriela é uma designer criativa, apaixonada por criar soluções visuais inovadoras e funcionais. Com um olhar atento aos detalhes e sólida compreensão dos princípios do design, ela trabalha para transformar ideias em experiências visuais impactantes. Sua abordagem equilibra estética e usabilidade, conectando marcas ao seu público de maneira autêntica.</div>
-                        </div>
-                        <div> 
-                            <button class="botao-contratar">Contratar</button> 
-                        </div>
-                      </div>
-                      
-                      <div class="responsive">
-                        <div class="gallery">
-                            <img src="https://i.imgur.com/wqiYI8d.png" alt="Francisco">
-                           <div class="gallery-2"> <img src="https://i.imgur.com/qZIdI5T.png" alt="Pereira"> </div>
-                          <div class="desc">Francisco Pereira <br> <br> Ele é conhecido por sua habilidade em liderar equipes, coordenar projetos complexos e otimizar processos, sempre com foco em sustentabilidade e melhoria contínua. Seu pensamento crítico e capacidade de planejar e executar com rigor fazem dele um profissional confiável, capaz de enfrentar desafios técnicos e encontrar soluções eficazes para seus clientes.</div>
-                        </div>
-                        <div>
-                           <button class="botao-contratar">Contratar</button> 
-                      </div>
-                      </div>
-                      
-                      <div class="clearfix"></div>
 
-                      <a href="catalogo.html" class="todos-profissionais"> Ver todos</a>
-                    </div>
 
+    <div class="prof-destaque">
+        <div class="prof-destaque-h2" > <h2>Nossos Profissionais</h2> </div>
+         <select class="form-control" id="filter">
+            <option>Todas</option>
+            <option value="active">Pintores</option>
+            <option value="closed">Mecânicos</option>
+          </select>
+        <div class="slide-profissionais">
+            <div class="row">
+                <div class="cards card1">
+                <div class="card-body">
+                <img class="gallery" src="https://i.imgur.com/B9sVakS.png" alt="Richard">
+                <img class="gallery-2" src="https://i.imgur.com/zhNxuID.png" alt="Ricardo">
+                    <h5 class="card-title">Richard Ricardo</h5>
+                    <div class="card-title-2" >Richard Ricardo é um pintor dedicado, cuja habilidade e paixão pela arte se refletem em cada obra que cria. Com um olhar atento aos detalhes e uma técnica apurada, ele transforma paredes simples em verdadeiras obras de arte. Sua dedicação ao ofício e busca pela perfeição fazem dele um artista admirado, capaz de criar ambientes únicos e sofisticados.</div>
+                    <p class="card-subtitle mb-2 text-muted">Pintor</p>
+                    <button type="button" class="btn btn-primary">Contratar</button>
+                </div>
+                </div>
+                    
+                <div class="cards card2">
+                <div class="card-body">
+                <img class="gallery" src="https://i.imgur.com/N2zJvJe.png" alt="Pedro">
+                <img class="gallery-2" src="https://i.imgur.com/RKqpi9k.png" alt="Alves">
+                    <h5 class="card-title">Pedro Alves</h5>
+                    <div class="card-title-2">Pedro Alves é um trabalhador incansável e altamente qualificado, conhecido por sua versatilidade e dedicação à excelência em tudo o que faz. Seja no campo da construção civil ou nos serviços gerais, ele sempre se dedica ao máximo para entregar resultados notáveis. Sua ética e empenho fazem dele um profissional de confiança, sempre cumprindo suas responsabilidades com competência.</div>
+                    <p class="card-subtitle mb-2 text-muted">Mecânico</p>
+                    <button type="button" class="btn btn-primary">Contratar</button>
+                </div>
+                </div>
+
+                <div class="cards card1">
+                <div class="card-body">
+                <img class="gallery" src="https://i.imgur.com/7fmKd0M.png" alt="Gabriela">
+                <img class="gallery-2" src="https://i.imgur.com/1OqnXHm.png" alt="Ferreira">
+                    <h5 class="card-title">Gabriela Ferreira</h5>  
+                    <div class="card-title-2">Gabriela é uma designer criativa, apaixonada por criar soluções visuais inovadoras e funcionais. Com um olhar atento aos detalhes e sólida compreensão dos princípios do design, ela trabalha para transformar ideias em experiências visuais impactantes. Sua abordagem equilibra estética e usabilidade, conectando marcas ao seu público de maneira autêntica.</div>
+                    <p class="card-subtitle mb-2 text-muted">Designer</p>
+                    <button type="button" class="btn btn-primary">Contratar</button>
+                </div>
+                </div>
+
+                <div class="cards card2">
+                <div class="card-body">
+                <img class="gallery" src="https://i.imgur.com/wqiYI8d.png" alt="Francisco">
+                <img class="gallery-2" src="https://i.imgur.com/qZIdI5T.png" alt="Pereira">
+                    <h5 class="card-title">Francisco Pereira</h5>
+                    <div class="card-title-2">Ele é conhecido por sua habilidade em liderar equipes, coordenar projetos complexos e otimizar processos, sempre com foco em sustentabilidade e melhoria contínua. Seu pensamento crítico e capacidade de planejar e executar com rigor fazem dele um profissional confiável, capaz de enfrentar desafios técnicos e encontrar soluções eficazes para seus clientes.</div>
+                    <p class="card-subtitle mb-2 text-muted">Arquiteto</p>
+                    <button type="button" class="btn btn-primary">Contratar</button>
+                </div>
+                </div>
             </div>
+        </div>
+        </div>
+        </div>
+         <script>
+
+             $(function() {
+  let filtro = $('#filter');
+  
+  filtro.on('change', function() {
+    if(filtro.val() == 'active') {
+      $('.card1').show();
+      $('.card2').hide();
+    } else if(filtro.val() == 'closed') {
+      $('.card2').show();
+      $('.card1').hide();
+    } else {
+      $('.card1, .card2').show();
+    }
+  })
+})
+         </script>
+
+         <!-- Kauã -->
          </div>
          <script>
             function myFunction() {
@@ -167,7 +187,7 @@ window.onclick = function(event) {
                 </div>
                 <div class="links-rodape">
                     <a href="" class="rodape-page">Central de ajuda</a>
-                    <a href="" class="rodape-page">Descubra como AVEXADO funciona</a>
+                    <a href="Comoavexadofunciona.html" class="rodape-page">Como AVEXADO funciona</a>
                     <a href="" class="rodape-page">Condições de uso</a>
                     <a href="" class="rodape-page">Informações de uso</a>
                     <a href="cookies.html" class="rodape-page">Preferencias de cookies</a>

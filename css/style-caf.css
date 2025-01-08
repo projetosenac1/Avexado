@@ -1,0 +1,247 @@
+*{
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.cadastro{
+    background-color: FAB12F;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menu-superior{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    background-color: #fef3e2;
+}
+
+.links-menu-superior{
+    width: 70%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.botoes-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 30%;
+    margin-right: 25px;
+    align-items:center; 
+}
+
+.entre{
+    margin-right: 20px;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(255, 177, 47, 100), rgba(250, 129, 47, 100));
+}
+
+.b1{
+    width: 50%;
+}
+
+.rodape{
+    height: 300px;
+    background-color: fef3e2 ;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.links-menu-inferior{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-rodape{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.cadastro-rodape{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
+    margin-top: 20px;
+}
+
+.p-inscreva-se-rodape{
+    font-size: 16px;
+}
+
+.inscreva-se-rodape{
+    display: flex;
+    justify-content: center;
+}
+
+.rede-1{
+    margin-right: 15px;
+    width: 100%;
+}
+
+.rede-2{
+    margin-right: 15px;
+}
+
+.icon-rede-social{
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.letra{
+    font-size: 22px;
+}
+
+.input-email-rodape{
+    width: 50%;
+    height: 40px;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.p-rodape{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px; 
+}
+
+.insc-rodape{
+    background-color: 007BFF;
+    margin-left: 10px;
+    width: 35%;
+    height: 40px;
+    color: #fff;
+    border-radius: 100px;
+}
+
+.wpp{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.youtube{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.email{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.instagram {
+    display: flex;
+    flex-direction: row;  
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.rodape-page{
+    margin-bottom: 10px;
+}
+
+.tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 60%;
+    color: #000000;
+    overflow: hidden;
+  }
+  input {
+    /* this makes the input invisible */
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  label {
+    margin-left: 8%;
+    position: relative;
+    display: flex;
+    padding: 0 0 0 0.3em;
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    font-weight: bold;
+    line-height: 2.5;
+    cursor: pointer;
+    font-size: 0.8em;
+  }
+  .tab-content {
+    /* default status invisible (height: 0) */
+    max-height: 0;
+    overflow: auto;
+    background: none;
+    border-radius: 10px;
+    margin-left: 8%;
+    transition: max-height .35s;
+  }
+  
+  /* :checked */
+  input:checked ~ .tab-content {
+  /* if the input next to the tab is checked, increase height */
+    max-height: 25em;
+  }
+  /* Icon - here are some nifty stuff... makes the de sign at the end of the label rotate if the content is visible or not */
+  label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    transition: all .35s;
+  }
+  input[type=checkbox] + label::after {
+    content: "+";
+  }
+  input[type=radio] + label::after {
+    content: "\25BC";
+  }
+  input[type=checkbox]:checked + label::after {
+    transform: rotate(315deg);
+  }
+  input[type=radio]:checked + label::after {
+    transform: rotateX(180deg);
+  }
+
+.title{
+    margin-left: 15%;
+    padding: 50px;
+}
+
+.background{
+    height: 170%;
+}
