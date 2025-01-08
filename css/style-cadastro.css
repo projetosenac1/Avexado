@@ -46,14 +46,13 @@ html {
 
 label {
     text-align: left;
-    width: 100%;
-    margin-bottom: 5px;
-
-
+    width: 60%;
+    margin-bottom: 5px;   
 }
 
-.tela-login {
+.tela-cadastro {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
@@ -61,14 +60,19 @@ label {
     padding: 0px;
 }
 
-.logo-login {
-    width: 100%;
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.logo {
+    width: 100px;
     margin-bottom: 20px;
     transition: width 0.3s ease;
 }
 
-.dados-login {
-    width: 45%;
+.dados-cadastro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,6 +80,14 @@ label {
     text-align: center;
     margin-right: 30px;
     padding-left: 130px;
+}
+
+.formulario{
+    align-items: flex-start;
+}
+
+.slide-cadastro{
+    width: 50%;
 }
 
 h2 {
@@ -91,13 +103,13 @@ p {
 }
 
 form {
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-input,
-button {
+input {
     border-radius: 20px;
     width: 45%;
     height: 40px;
@@ -107,15 +119,14 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
+input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"]{
     width: 100%;
     max-width: 425px;
 }
 
 button.entrar {
-    margin-left: auto;
-    margin-right: auto;
     background-color: #FAB12F;
     width: 70%;
     height: 50px;
@@ -160,7 +171,7 @@ input:focus {
     transform: scale(1.02);
 }
 
-.slide-login {
+.slide-cadastro {
     width: 45%;
     height: 729px;
     background-color: #FEF3E2;
@@ -208,8 +219,6 @@ input:focus {
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
 }
 .ja{
     padding: 10px;
