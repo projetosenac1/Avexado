@@ -1,7 +1,13 @@
 *{
     margin: 0px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Itim;
     text-decoration: none;
+ 
+}
+
+@font-face {
+    font-family: Itim;
+    src: url(C:\Users\a95300620\Downloads\Avexado-master\Avexado-master\Itim\Itim-Regular.ttf);
 }
 
 a{
@@ -92,7 +98,7 @@ a{
 
 .valor-emp{
     width: 25%;
-    height: 450px;
+    height: 300px;
     border: 3px solid #D8D4D4;
     border-radius: 10px;
     margin-left: 10px;
@@ -275,8 +281,7 @@ a{
   }
   .gallery-2{
     position: absolute;
-    padding-top: 95px;
-    transform: translateX(-173%);
+    transform: translate(-60px, -95px);
    }
    .card-title{
     padding: 35px 0px 0px 0px;
@@ -302,9 +307,25 @@ a{
    }
 
 .row{
+    display: flex;
+    
     padding: 15px 0px 0px 15px;
 }
 
-
-  
+.form-control {
+    display: flex;
+    display: block;
+    width: 20%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
   /* Kauã Novo */

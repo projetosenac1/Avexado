@@ -1,6 +1,11 @@
 *{
     margin: 0px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Itim;
+}
+
+@font-face {
+    font-family: Itim;
+    src: url(C:\Users\a95300620\Downloads\Avexado-master\Avexado-master\Itim\Itim-Regular.ttf);
 }
 
 a{
@@ -227,4 +232,23 @@ a{
 
 .rodape-page{
     margin-bottom: 10px;
+}
+
+.img2{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #fef3e2;
+    border-radius: 45px;
+    margin-top: 3%;
+    width: 35%;
+    height: 35%;
+}
+
+.img3{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #fef3e2;
+    border-radius: 45px;
+    width: 35%;
+    height: 35%;
 }

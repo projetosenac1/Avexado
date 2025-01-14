@@ -1,5 +1,13 @@
 *{
-    margin: 0%;
+    margin: 0px;
+    font-family: Itim;
+    text-decoration: none;
+ 
+}
+
+@font-face {
+    font-family: Itim;
+    src: url(C:\Users\a95300620\Downloads\Avexado-master\Avexado-master\Itim\Itim-Regular.ttf);
 }
 
 a{
