@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: block;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .slide-login {
+        display: none;
+    }
+
+    .dados-login {
+        position: absolute;
+        left: 190px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 540px){
+    .dados-login{
+        position: absolute;
+        left: 140px;
+    }
+}
+
+@media (max-width: 500px){
+    .dados-login{
+        position: absolute;
+        left: 115px;
+    }
+}
+
+
+
+label {
+    text-align: left;
+    width: 60%;
+    margin-bottom: 5px;   
+}
+
+.tela-cadastro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgba(255, 177, 47, 100), rgba(250, 129, 47, 100));
+    padding: 0px;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+    transition: width 0.3s ease;
+}
+
+.dados-cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 30px;
+    padding-left: 130px;
+}
+
+.formulario{
+    align-items: flex-start;
+}
+
+.slide-cadastro{
+    width: 50%;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    border-radius: 20px;
+    width: 45%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    width: 100%;
+    max-width: 425px;
+}
+
+button.entrar {
+    background-color: #FAB12F;
+    width: 70%;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.2s transform ease-in-out;
+}
+
+button.entrar:hover {
+    background-color: #f87a00;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+    border: 2px solid #FAB12F;
+}
+
+input {
+    border-color: transparent;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 1px 1px 10px 1px #e4d2b4;
+}
+
+.recuperar-senha {
+    text-align: right;
+    font-size: 14px;
+    color: rgba(36, 116, 237, 0.8);
+    margin-bottom: 2px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recuperar-senha:hover {
+    color: rgba(36, 116, 237, 0.8);
+    text-decoration: underline;
+    transform: scale(1.02);
+}
+
+.slide-cadastro {
+    width: 45%;
+    height: 729px;
+    background-color: #FEF3E2;
+    border-radius: 100px 0 0 100px;
+    position: relative;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 1s ease;
+    height: 100%;
+}
+
+.slides img {
+    width: 100%;
+    height: 105%;
+    object-fit: cover;
+}
+
+.continue p:before, .continue p::after{
+    content: ' ';
+    position: absolute;
+    width: 150px;
+    border-top: 1px solid black;
+    margin-top: 0.5%;
+
+}
+.continue p:before {
+    margin-left: -155px;
+}
+
+.continue p:after {
+    margin-left: 5px;
+    width: 150px;
+}
+
+.google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 50px;
+    width: 345px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+.ja{
+    padding: 10px;
+}
+.crie{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgba(36, 116, 237, 0.8);
+}
+

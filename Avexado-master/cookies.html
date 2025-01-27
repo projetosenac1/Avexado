@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <title>Avexado</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style-cookies.css">
+    </head>
+
+    <body>
+        <div class="corpo-pagina">
+            <nav>
+                <div class="menu-superior">
+                    <div class="links-menu-superior">
+                        <a href="home.html">
+                            <img src="https://i.imgur.com/4ATQqbX.png" alt="" class="img-icone">
+                        </a>
+                        <div id="divBusca">
+                            <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                        </div>
+                        <a href="SobreNos.html">Sobre Nós</a>
+                        <a href="Contato.html">Contato</a>
+                        <a href="Politica.html">Política e Privacidade</a>
+                        <a href="termos.html">Termos de Serviços</a>
+                    </div>
+                    <div class="botoes-menu">
+                        <a href="Login.html" class="entre">Entre</a>
+                        <a href="Cadastro.php" class="cadastro">Cadastre-se</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="banner-home"></div>
+
+            <!-- Seção de Preferências de Cookies -->
+            <div class="container-cookies">
+                <h1>Gerenciamento de Preferências de Cookies</h1>
+
+                <p>Este site utiliza cookies para melhorar a experiência de navegação, personalizar conteúdo e anúncios, fornecer recursos de mídia social e analisar o tráfego do site. Você pode controlar o uso de cookies de acordo com sua preferência, clicando nas opções abaixo.</p>
+
+                <h2>Categorias de Cookies</h2>
+                <form action="gerenciar-cookies.php" method="POST">
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="necessaryCookies" id="necessaryCookies" checked disabled> 
+                                <strong>Cookies Necessários</strong>
+                                <p>Essenciais para o funcionamento básico do site, como manter você logado ou lembrar preferências de segurança. Esses cookies são obrigatórios e não podem ser desativados.</p>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="performanceCookies" id="performanceCookies" checked> 
+                                <strong>Cookies de Desempenho</strong>
+                                <p>Esses cookies são utilizados para analisar como você interage com o site, ajudando-nos a melhorar o desempenho e a experiência do usuário.</p>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="functionalCookies" id="functionalCookies">
+                                <strong>Cookies de Funcionalidade</strong>
+                                <p>Permitem lembrar suas preferências e escolhas, como idioma ou outras configurações personalizadas para melhorar sua navegação.</p>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="advertisingCookies" id="advertisingCookies">
+                                <strong>Cookies de Publicidade e Marketing</strong>
+                                <p>Esses cookies rastreiam seu comportamento de navegação para exibir anúncios personalizados com base em seus interesses.</p>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <div class="btn-container">
+                        <button type="submit" class="btn">Salvar Preferências</button>
+                        <button type="button" class="btn" onclick="document.getElementById('necessaryCookies').checked=true; document.getElementById('performanceCookies').checked=true; document.getElementById('functionalCookies').checked=true; document.getElementById('advertisingCookies').checked=true;">Aceitar Todos os Cookies</button>
+                        <button type="button" class="btn" onclick="document.getElementById('performanceCookies').checked=false; document.getElementById('functionalCookies').checked=false; document.getElementById('advertisingCookies').checked=false;">Recusar Todos os Cookies Não Essenciais</button>
+                    </div>
+                </form>
+
+                <div class="footer-links">
+                    <p>Para mais informações sobre o uso de cookies e como protegemos seus dados, consulte nossa <a href="politica-privacidade.html">Política de Privacidade</a>.</p>
+                    <p>Você pode alterar suas preferências de cookies a qualquer momento clicando <a href="gerenciar-cookies.html">aqui</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="rodape">
+                <div class="links-menu-inferior">
+                    <div class="links-rodape">
+                        <a href="" class="rodape-page">Quem somos</a>
+                        <a href="" class="rodape-page">Vagas</a>
+                        <a href="Contato.html" class="rodape-page">Contatos</a>
+                        <a href="" class="rodape-page">Relações com  investidores</a>
+                        <a href="" class="rodape-page">App AVEXADO!</a>
+                        <a href="" class="rodape-page">Afiliados</a>
+                    </div>
+                    <div class="links-rodape">
+                        <a href="" class="rodape-page">Central de ajuda</a>
+                        <a href="Comoavexadofunciona.html" class="rodape-page">Como AVEXADO funciona</a>
+                        <a href="" class="rodape-page">Condições de uso</a>
+                        <a href="" class="rodape-page">Informações de uso</a>
+                        <a href="" class="rodape-page">Aviso de Privacidade</a>
+                    </div>
+                </div>
+                <div class="cadastro-rodape">
+                    <p class="p-rodape">
+                        Procura otimos serviços para seus projetos?<br>
+                        inscreva-se em nosso site.
+                    </p>
+                    <div class="inscreva-se-rodape">
+                        <input type="email" class="input-email-rodape" placeholder="Email ou Telefone"> 
+                        <button class="insc-rodape">Inscreva-se</button>
+                    </div>
+                    <div class="redes-sociais">
+                        <div>
+                            <div>
+                            <a href="https://www.instagram.com/avexado" class="instagram">
+                                <img src="https://i.imgur.com/BTHF2BK.png" alt="" class="icon-rede-social">
+                                <p>@Avexado!</p>
+                            </a>
+                            </div>
+                            
+                            <div>
+                                <a href="tel:+4733378901" class="wpp">
+                                    <img src="https://i.imgur.com/IbdcaaC.png" alt="" class="icon-rede-social">
+                                    <p>+47 333 78 901</p>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div>
+                                <a href="https://gmail.com" class="email">
+                                    <img src="https://i.imgur.com/KFvQfvc.png" alt="" class="icon-rede-social">
+                                    <p>avexado.negocios01@gmail.com</p>
+                                </a>
+                            </div>
+    
+                            <div>
+                                <a href="https://youtube.com" class="youtube">
+                                    <img src="https://i.imgur.com/2zcQTmm.png" alt="" class="icon-rede-social">
+                                    <p>youtube.com/avexado</p>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+

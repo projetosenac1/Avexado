@@ -1,0 +1,331 @@
+*{
+    margin: 0px;
+    font-family: Itim;
+    text-decoration: none;
+ 
+}
+
+@font-face {
+    font-family: Itim;
+    src: url(C:\Users\a95300620\Downloads\Avexado-master\Avexado-master\Itim\Itim-Regular.ttf);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.cadastro{
+    background-color: FAB12F;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menu-superior{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    background-color: #fef3e2;
+}
+
+.links-menu-superior{
+    width: 70%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.botoes-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 30%;
+    margin-right: 25px;
+    align-items:center; 
+}
+
+.entre{
+    margin-right: 20px;
+}
+
+.banner-home{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right, rgba(255, 177, 47, 100), rgba(250, 129, 47, 100));
+    padding: 50px 50px 0px 0px;
+}
+
+.img-banner-home{
+    width: 40%;
+}
+
+/* .img-banner{
+    height: 80%;
+} */
+
+.title-banner{
+    text-align: center;
+}
+
+.cadastre-se{
+    background-color: #FAB12F;
+    border:none;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.cont-banner-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.valores-emp{
+    background-color: FEF3E2;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.valor-emp{
+    width: 25%;
+    height: 300px;
+    border: 3px solid #D8D4D4;
+    border-radius: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+
+.img-valor{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rodape{
+    height: 300px;
+    background-color: fef3e2 ;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.links-menu-inferior{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-rodape{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.cadastro-rodape{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
+    margin-top: 20px;
+}
+
+.p-inscreva-se-rodape{
+    font-size: 16px;
+}
+
+.inscreva-se-rodape{
+    display: flex;
+    justify-content: center;
+}
+
+.rede-1{
+    margin-right: 15px;
+    width: 100%;
+}
+
+.rede-2{
+    margin-right: 15px;
+}
+
+.icon-rede-social{
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.letra{
+    font-size: 22px;
+}
+
+.input-email-rodape{
+    width: 50%;
+    height: 40px;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.p-rodape{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px; 
+}
+
+.insc-rodape{
+    background-color: 007BFF;
+    margin-left: 10px;
+    width: 35%;
+    height: 40px;
+    color: #fff;
+    border-radius: 100px;
+}
+
+.wpp{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.youtube{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.email{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.instagram {
+    display: flex;
+    flex-direction: row;  
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.rodape-page{
+    margin-bottom: 10px;
+}
+
+/* Kauã */
+
+.prof-destaque{
+    background-color:FA812F;
+    height: 800px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.prof-destaque-h2{
+    text-align: center;
+    align-items: center ;
+    padding: 8px 0px 8px 0px;
+    font-size: 25px;
+}
+
+/* Kauã */
+
+/* Kauã Novo */
+
+.cards {
+    width: 317px;
+    height: 640px;
+    background-color: #fff !important;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+  }
+  .btn {
+    width: 150px;
+    margin-top: 8px;
+  }
+  .gallery {
+    border: 1px solid #ccc;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 180px;
+  }
+  
+.gallery:hover {
+    border: 1px solid #777;
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+.gallery img {
+    width: 100%;
+    height: 25%;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .gallery-2{
+    position: absolute;
+    transform: translate(-60px, -95px);
+   }
+   .card-title{
+    padding: 35px 0px 0px 0px;
+    text-align: center;
+   }
+    .card-title-2{
+      padding: 0px 0px 0px 0px;
+      text-align: center;
+      padding: 0px 13px 0px 13px;
+    }
+   .prof-destaque{
+    background-color: #fa812f;
+   }
+
+   .card-subtitle{
+    padding-top: 10px;
+   }
+
+   .card-body{
+    width: 450px;
+    height: 570px;
+    display: table-row;
+   }
+
+.row{
+    display: flex;
+    
+    padding: 15px 0px 0px 15px;
+}
+
+.form-control {
+    display: flex;
+    display: block;
+    width: 20%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+  /* Kauã Novo */

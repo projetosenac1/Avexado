@@ -1,0 +1,181 @@
+*{
+    margin: 0%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.cadastro{
+    background-color: FAB12F;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menu-superior{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    background-color: #fef3e2;
+}
+
+.links-menu-superior{
+    width: 70%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.botoes-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 30%;
+    margin-right: 25px;
+    align-items:center; 
+}
+
+.entre{
+    margin-right: 20px;
+}
+
+.Titulo{
+    background-color: #FAB12F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.termos{
+    background-color: #FFEBB9;
+    justify-content: start;
+    padding: 50px;
+    line-height: 2;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.letras{
+    color: black;
+    font-size: 22px;
+}
+
+.rodape{
+    height: 300px;
+    background-color: fef3e2 ;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.links-menu-inferior{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-rodape{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.cadastro-rodape{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
+    margin-top: 20px;
+}
+
+.p-inscreva-se-rodape{
+    font-size: 16px;
+}
+
+.inscreva-se-rodape{
+    display: flex;
+    justify-content: center;
+}
+
+.rede-1{
+    margin-right: 15px;
+    width: 100%;
+}
+
+.rede-2{
+    margin-right: 15px;
+}
+
+.icon-rede-social{
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.letra{
+    font-size: 22px;
+}
+
+.input-email-rodape{
+    width: 50%;
+    height: 40px;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.p-rodape{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px; 
+}
+
+.insc-rodape{
+    background-color: 007BFF;
+    margin-left: 10px;
+    width: 35%;
+    height: 40px;
+    color: #fff;
+    border-radius: 100px;
+}
+
+.wpp{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.youtube{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.email{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.instagram {
+    display: flex;
+    flex-direction: row;  
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.rodape-page{
+    margin-bottom: 10px;
+}
