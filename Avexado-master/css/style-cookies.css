@@ -250,3 +250,27 @@ a {
 .rodape-page{
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 992px) {
+    .menu-superior{
+        width: 100%;
+    }
+
+    .links-menu-superior{
+        width: 100%;
+        justify-content: space-between(10px);
+    }
+
+
+    .formulario{
+        width: 70%;
+    }
+
+    .container-cookies{
+        width: 70%;
+    }
+    
+    .footer-links{
+        width: 70%;
+    }
+}

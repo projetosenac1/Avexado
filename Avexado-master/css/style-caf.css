@@ -245,3 +245,9 @@ a{
 .background{
     height: 170%;
 }
+
+@media screen and (max-width: 992px) {
+    .menu-superior{
+        width: 100%;
+    }
+}

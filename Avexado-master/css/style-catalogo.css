@@ -376,3 +376,40 @@ a{
     margin-bottom: 10px;
 }
 
+@media screen and (max-width: 992px) {
+    .menu-superior{
+        width: 100%;
+    }
+
+    .links-menu-superior{
+        width: 100%;
+    }
+
+    .profissional{
+        width: 80%;
+    }
+
+    .car{
+        width: 10%;
+    }
+
+    .moto{
+        width: 10%;
+    }
+
+    .catalogo{
+        display: flex;
+        height: 35%;
+        width: 35%;
+        padding-left: 25%;
+        justify-content: space-evenly;
+    }
+
+    .categorias{
+        width: 60%;
+    }
+
+    .custo{
+        width: 50%;
+    }
+}

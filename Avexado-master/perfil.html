@@ -16,10 +16,12 @@
                             <input type="text" id="txtBusca" placeholder="Buscar..."/>
                         </div>
                         <!-- <a href="">Busca</a> -->
-                        <a href="SobreNos.html">Sobre Nós</a>
-                        <a href="Contato.html">Contato</a>
-                        <a href="Politica.html">Política e Privacidade</a>
-                        <a href="termos.html">Termos de serviços</a>
+                        <div class = "palavras">
+                        <a href="SobreNos.html">Sobre Nós</a class = "sobrenos">
+                        <a href="Contato.html">Contato</a class = "Contato">
+                        <a href="Politica.html">Política e Privacidade</a class = "Politica">
+                        <a href="termos.html">Termos de serviços</a class = "termos">
+                        </div>
                     </div>
                     <div class="botoes-menu">
                         <a href="Login.html" class="entre">Entre</a>
@@ -33,15 +35,15 @@
                         <div class="carousel-inner">
                             <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
                             <div class="carousel-item">
-                                <img src="https://i.imgur.com/RKqpi9k.png">
+                                <img src="https://s2.glbimg.com/qE7kY1Iwpd4s1drMRfwq_gfe7k0=/fit-in/940x590/e.glbimg.com/og/ed/f/original/2013/11/22/fusca_1970.jpg">
                             </div>
                             <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
                             <div class="carousel-item">
-                                <img src="https://i.imgur.com/RKqpi9k.png">
+                                <img src="https://s2.glbimg.com/KdtJVzIpnJ7kYVaujEhd_ErRgOk=/620x465/s.glbimg.com/jo/g1/f/original/2013/11/21/ck-7797.jpg">
                             </div>
                             <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
                             <div class="carousel-item">
-                                <img src="https://i.imgur.com/RKqpi9k.png">
+                                <img src="https://s1.1zoom.me/big7/933/Tuning_Autumn_Mitsubishi_Lancer_Evolution_X_White_574733_1920x1080.jpg">
                             </div>
                             <label for="carousel-3" class="carousel-control prev control-1">‹</label>
                             <label for="carousel-2" class="carousel-control next control-1">›</label>
@@ -65,9 +67,310 @@
                 </div>
                 <div class="direita">
                     <div class="imgs">
-                        <img src="https://img.freepik.com/premium-photo/car-lifting-equipment-garage-being-repair-fix_103864-175.jpg" alt="">
+                        <img src="https://i.imgur.com/BQY5Sd8.png" alt="" class="background-img">
                         <img src="https://i.imgur.com/RKqpi9k.png" alt="" class="pedro_alves_img">
                     </div>
+                    <div class="textos">
+                        <div class="nome">
+                            <h3>Pedro Alves</h3>
+                        </div>
+                        <div class="descricao">
+                            <img src="https://icons.veryicon.com/png/o/internet--web/billion-square-cloud/review-4.png" alt="" class="review-icon"><h4 class="review-texto">9.7</h4> <img src="https://png.pngtree.com/png-vector/20230419/ourmid/pngtree-vector-location-icon-silhouette-png-image_6716869.png" alt="" class="location-icon"> <h4>R. Dr. João Marcelino, 867 - Nova Betânia, Mossoró - RN, 59612-012</h4> 
+                        </div>
+                        <div class="descricao-2">
+                            <h4>Graduado | Mecânico a mais de 10 anos. | Repara Carros Velhos | Conserta motos.</h4>
+                        </div>
+                        <div class="sobre">
+                            <h3>Sobre</h3> <h4>Eu sou Pedro Alves, mecânico há mais de 10 anos, e minha jornada no mundo automotivo começou quando ainda era criança, mexendo no motor do carro do meu pai. Desde então, meu amor por tudo que envolve máquinas e motores só cresceu. Eu me considero alguém que respira mecânica: estou sempre curioso, buscando aprender mais e aperfeiçoar minhas técnicas. No meu trabalho, a experiência é tudo. Ao longo dos anos, aprendi a lidar com os mais diversos problemas, desde os mais simples até os mais complexos, com carros, motos e até máquinas pesadas.
+                                Cada veículo que chega até mim é tratado com a mesma atenção e cuidado. Eu acredito que, para ser um bom mecânico, é preciso entender não só a parte técnica, mas também ouvir o cliente. Muitas vezes, o simples fato de ouvir a preocupação de quem traz o carro já me dá a pista do que pode estar errado. Trabalho com precisão e paciência, porque sei que, no meu ramo, cada detalhe faz a diferença.
+                                Sou do tipo que não desiste facilmente. Se o problema é difícil de identificar, fico o tempo que for necessário, mexendo e testando até encontrar a solução certa. Meu objetivo é sempre resolver o problema da forma mais eficiente e duradoura, garantindo a segurança e a satisfação de quem confia em meu trabalho.</h4>
+                        </div>
+                        <div class="galeria">
+                            <!DOCTYPE html>
+                            <html lang="en">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Toggle Images</title>
+                                <style>
+                                    /* Hide the checkbox but still keep it functional */
+                                    input[type="checkbox"] {
+                                        display: none;
+                                    }
+
+                                    /* Style the clickable text */
+                                    label {
+                                        cursor: pointer;
+                                        font-weight: bold;
+                                        color: blue;
+                                    }
+
+                                    /* Initially hide the images */
+                                    .imageBox {
+                                        justify-content: center;
+                                        width: 80%;
+                                        display: none;
+                                        margin-top: 20px;
+                                    }
+
+                                    /* Show images when the checkbox is checked */
+                                    input[type="checkbox"]:checked + label + .imageBox {
+                                        display: flex;
+                                    }
+
+                                    .imageBox img {
+                                        max-width: 100%;
+                                        height: auto;
+                                        display: block;
+                                        margin-bottom: 10px;
+                                    }
+                                </style>
+                            </head>
+                            <body>
+                                <!-- Hidden checkbox used for toggling -->
+                                <input type="checkbox" id="toggleImages" />
+
+                                <!-- Label that acts as the clickable text -->
+                                <label for="toggleImages">GALERIA</label>
+
+                                <!-- Div containing images, initially hidden -->
+                                <div class="imageBox">
+                                    <!DOCTYPE html>
+                                        <html lang="en">
+                                        <head>
+                                            <meta charset="UTF-8">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                            <title>Image Grid Navigation</title>
+                                            <style>
+                                                .body {
+                                                    margin: 0;
+                                                    padding: 0;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    width: 80%;
+                                                    height: 100%;
+                                                    background-color: #f0f0f0;
+                                                }
+
+                                                .container {
+                                                    display: flex;
+                                                    position: relative;
+                                                }
+
+                                                .image-grid {
+                                                    display: grid;
+                                                    grid-template-columns: repeat(4, 1fr);
+                                                    grid-template-rows: repeat(4, 1fr);
+                                                    gap: 5%;
+                                                    width: 100%;
+                                                    height: 80%;
+                                                    overflow: hidden;
+                                                }
+
+                                                .image-grid img {
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    object-fit: cover;
+                                                }
+
+                                                .dots {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    right: -40px;
+                                                    transform: translateY(-50%);
+                                                    gap: 10px;
+                                                }
+
+                                                .dot {
+                                                    width: 10px;
+                                                    height: 10px;
+                                                    border-radius: 50%;
+                                                    background-color: #333;
+                                                    cursor: pointer;
+                                                }
+
+                                                .dot.active {
+                                                    background-color: #ff5722;
+                                                }
+
+                                                .grid-container {
+                                                    display: flex;
+                                                    position: relative;
+                                                }
+
+                                                .grid-container .image-grid {
+                                                    display: none;
+                                                }
+
+                                                .grid-container .image-grid.active {
+                                                    display: grid;
+                                                }
+                                            </style>
+                                        </head>
+                                        <body>
+
+                                        <div class="container">
+                                            <div class="grid-container">
+                                                <div class="image-grid active" id="grid1">
+                                                    <img src="https://s1.1zoom.me/b5050/233/Tuning_Nissan_GTR_Black_564345_1920x1080.jpg" alt="Image 1">
+                                                    <img src="https://s1.1zoom.me/big0/19/Mitsubishi_Tuning_lancer_451780.jpg" alt="Image 2">
+                                                    <img src="https://s1.1zoom.me/big0/212/431914-Kycb.jpg" alt="Image 3">
+                                                    <img src="https://s1.1zoom.me/big0/50/Aston_Martin_Tuning_2018_Vantage_Yellow_green_536645_1280x853.jpg" alt="Image 4">
+                                                    <img src="https://i0.wp.com/www.autocustom.com.br/wp-content/uploads/2015/03/o-que-e-tuning-o-que-e-tunar-um-carro-velozes-e-furiosos.jpg" alt="Image 5">
+                                                    <img src="https://noticiassobreautomovel.com.br/wp-content/uploads/2024/03/carros-tuning.jpg" alt="Image 6">
+                                                    <img src="https://doutormultas.com.br/wp-content/uploads/2018/01/como-tunar-carro-mudancas-mais-comuns.jpg" alt="Image 7">
+                                                    <img src="https://gasolinanaveiaeferrugemnapele.wordpress.com/wp-content/uploads/2017/08/t1.jpg?w=736" alt="Image 8">
+                                                    <img src="https://s3-sa-east-1.amazonaws.com/revista.mobiauto/ImagensSUVs/Carros+tunados/Carro-Tunado-som.jpg" alt="Image 9">
+                                                    <img src="https://noticiassobreautomovel.com.br/wp-content/uploads/2024/03/carros-tuning.jpg" alt="Image 10">
+                                                    <img src="https://s1.1zoom.me/big0/933/Tuning_Autumn_Mitsubishi_Lancer_Evolution_X_White_574733_1280x720.jpg" alt="Image 11">
+                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaSsfWo8L3MoXR4kayi30DtbUKQwvgb0aRRQ&s" alt="Image 12">
+                                                </div>
+                                                <div class="image-grid" id="grid2">
+                                                    <img src="https://g1.globo.com/Noticias/Carros/foto/0,,14674716,00.jpg" alt="Image 17">
+                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5nFM7jcKndyMQKlenIVNl769DtfdMpVpgnw&s" alt="Image 18">
+                                                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtPp37MJEPt2uBD5FRHMUGvp7BrUfjW8oQwLfmhRNsOs5i6AH4T0ALMJ0gacU2nxOjc-6FF_32sCDIqP6jClkTxgXEsTu37-WO_CsL9LafFthqk0tz72Tk3p6DuGVAXfAPz6yEr-wRXhIs/s1600/Maverick.jpg" alt="Image 19">
+                                                    <img src="https://carrosantigos.blog.br/wp-content/uploads/carro-tunado-ford-mercury.jpg" alt="Image 20">
+                                                    <img src="https://magawallpaper.wordpress.com/wp-content/uploads/2012/10/baixarcarrotunadolamborghiniwallpaperbyhi-legalfotosecapas.jpg" alt="Image 21">
+                                                    <img src="https://www.portaldotransito.com.br/wp-content/uploads/2022/11/tunning.jpg.webp" alt="Image 22">
+                                                    <img src="https://cuboguia.com/arquivos/LoginID_390/Padrao/izumiracing-16-8374.jpg" alt="Image 23">
+                                                    <img src="https://garagem360.com.br/wp-content/uploads/2019/02/2-1.jpg" alt="Image 24">
+                                                    <img src="https://magawallpaper.wordpress.com/wp-content/uploads/2012/10/baixarcarrotunadomaquinadeautomovelwallpaperbyhi-legalfotosecapas.jpg" alt="Image 25">
+                                                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN6eVIkxK1a2YvhcxmuJCfGupL2H7EL6OBmsBixv77GjSdydsmgxHhD4Fg1txSrXaHpwDR_4kkX-bF18k0Sn9oyPe8B9ztDYiGSF-Q0rTpxGsUIO9ldQulpOdlcnFBjaH55TaQT__c9egF/s1600/carros-tunados-e-modificados.4.jpg" alt="Image 26">
+                                                    <img src="https://s2.glbimg.com/E9myA6CBunBjfFcbubmD6IttM_LRpp4GRF-DAsNf0XpIoz-HdGixxa_8qOZvMp3w/s.glbimg.com/jo/g1/f/original/2012/07/18/peugeot-206-tunado-620-2.jpg" alt="Image 27">
+                                                    <img src="https://www.carrodegaragem.com/y/397/carro-tunado.jpg" alt="Image 28">
+                                                    <img src="https://autos.culturamix.com/blog/wp-content/gallery/carros-equipados-e-tunados-5/Carros-Equipados-e-Tunados-14.jpg" alt="Image 29">
+                                                    <img src="https://carrosantigos.blog.br/wp-content/uploads/carro-tunado-caravan-laranja.jpg" alt="Image 30">
+                                                    <img src="https://magawallpaper.wordpress.com/wp-content/uploads/2012/11/wallpapercarrotunadofordverdebyhi-legalfotosecapas.jpg" alt="Image 31">
+                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREuuGL7AlumZpHKsTOPExUPM9I_nw1409myw&s" alt="Image 32">
+                                                </div>
+                                                <div class="image-grid" id="grid3">
+                                                    <img src="https://via.placeholder.com/150?text=9-1" alt="Image 33">
+                                                    <img src="https://via.placeholder.com/150?text=9-2" alt="Image 34">
+                                                    <img src="https://via.placeholder.com/150?text=9-3" alt="Image 35">
+                                                    <img src="https://via.placeholder.com/150?text=9-4" alt="Image 36">
+                                                    <img src="https://via.placeholder.com/150?text=10-1" alt="Image 37">
+                                                    <img src="https://via.placeholder.com/150?text=10-2" alt="Image 38">
+                                                    <img src="https://via.placeholder.com/150?text=10-3" alt="Image 39">
+                                                    <img src="https://via.placeholder.com/150?text=10-4" alt="Image 40">
+                                                    <img src="https://via.placeholder.com/150?text=11-1" alt="Image 41">
+                                                    <img src="https://via.placeholder.com/150?text=11-2" alt="Image 42">
+                                                    <img src="https://via.placeholder.com/150?text=11-3" alt="Image 43">
+                                                    <img src="https://via.placeholder.com/150?text=11-4" alt="Image 44">
+                                                    <img src="https://via.placeholder.com/150?text=12-1" alt="Image 45">
+                                                    <img src="https://via.placeholder.com/150?text=12-2" alt="Image 46">
+                                                    <img src="https://via.placeholder.com/150?text=12-3" alt="Image 47">
+                                                    <img src="https://via.placeholder.com/150?text=12-4" alt="Image 48">
+                                                </div>
+                                                <div class="image-grid" id="grid4">
+                                                    <img src="https://via.placeholder.com/150?text=13-1" alt="Image 49">
+                                                    <img src="https://via.placeholder.com/150?text=13-2" alt="Image 50">
+                                                    <img src="https://via.placeholder.com/150?text=13-3" alt="Image 51">
+                                                    <img src="https://via.placeholder.com/150?text=13-4" alt="Image 52">
+                                                    <img src="https://via.placeholder.com/150?text=14-1" alt="Image 53">
+                                                    <img src="https://via.placeholder.com/150?text=14-2" alt="Image 54">
+                                                    <img src="https://via.placeholder.com/150?text=14-3" alt="Image 55">
+                                                    <img src="https://via.placeholder.com/150?text=14-4" alt="Image 56">
+                                                    <img src="https://via.placeholder.com/150?text=15-1" alt="Image 57">
+                                                    <img src="https://via.placeholder.com/150?text=15-2" alt="Image 58">
+                                                    <img src="https://via.placeholder.com/150?text=15-3" alt="Image 59">
+                                                    <img src="https://via.placeholder.com/150?text=15-4" alt="Image 60">
+                                                    <img src="https://via.placeholder.com/150?text=16-1" alt="Image 61">
+                                                    <img src="https://via.placeholder.com/150?text=16-2" alt="Image 62">
+                                                    <img src="https://via.placeholder.com/150?text=16-3" alt="Image 63">
+                                                    <img src="https://via.placeholder.com/150?text=16-4" alt="Image 64">
+                                                </div>
+                                            </div>
+
+                                            <div class="dots">
+                                                <div class="dot active" onclick="showGrid(1)"></div>
+                                                <div class="dot" onclick="showGrid(2)"></div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function showGrid(gridNumber) {
+                                                // Hide all grids
+                                                const grids = document.querySelectorAll('.image-grid');
+                                                grids.forEach(grid => grid.classList.remove('active'));
+
+                                                // Show the selected grid
+                                                const selectedGrid = document.getElementById('grid' + gridNumber);
+                                                selectedGrid.classList.add('active');
+
+                                                // Update active dot
+                                                const dots = document.querySelectorAll('.dot');
+                                                dots.forEach(dot => dot.classList.remove('active'));
+                                                dots[gridNumber - 1].classList.add('active');
+                                            }
+                                        </script>
+
+                                        </body>
+                                        </html>
+
+                                </div>
+                            </body>
+                            </html>
+
+                        </div>
+                        <div class="CONTATO">
+                            <!DOCTYPE html>
+                            <html lang="en">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Toggle Text</title>
+                                <style>
+                                    /* Hide the checkbox but keep it functional */
+                                    input[type="checkbox"] {
+                                        display: none;
+                                    }
+                            
+                                    /* Style the clickable text */
+                                    label {
+                                        cursor: pointer;
+                                        font-weight: bold;
+                                        color: blue;
+                                    }
+                            
+                                    /* Initially hide the text content */
+                                    .textBox {
+                                        display: none;
+                                        margin-top: 20px;
+                                    }
+                            
+                                    /* Show the text when the checkbox is checked */
+                                    input[type="checkbox"]:checked + label + .textBox {
+                                        display: block;
+                                    }
+                            
+                                    .textBox p {
+                                        font-size: 16px;
+                                        margin-bottom: 10px;
+                                    }
+                                </style>
+                            </head>
+                            <body>
+                                <!-- Hidden checkbox used for toggling -->
+                                <input type="checkbox" id="toggleText" />
+                            
+                                <!-- Label that acts as the clickable text -->
+                                <label for="toggleText">CONTATO</label>
+                            
+                                <!-- Div containing the texts, initially hidden -->
+                                <div class="textBox">
+                                    <h4>E-mail: Pedraovesalves12@gmail.com</h4>
+                                    <h4>Whatsapp: (84) 9 5542-1234</h4>
+                                    <h4>Instagram: https//Instagram.com/Pedraoves</h4>
+                                    <h4>Facebook: https//facebook.com/Pedraoves</h4>
+                                </div>
+                            </body>
+                            </html>
+                        </div>
+                    </div>
+
                 </div>
             </div>
     </body>
