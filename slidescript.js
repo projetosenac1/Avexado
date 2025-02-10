@@ -15,4 +15,18 @@ function changeSlideRandomly() {
 setInterval(changeSlideRandomly, 3000);
 
 
-window.onload = changeSlideRandomly;
+function myFunction() {
+    var senhaField = document.getElementById("senha");
+    var eyeIcon = document.getElementById("eye-icon");
+
+    if (senhaField.type === "password") {
+        senhaField.type = "text";
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+    } else {
+        senhaField.type = "password";
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+    }
+}
+

@@ -1,18 +1,21 @@
 <html lang="pt-br">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Login</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/style-login.css">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
 
         <div class="tela-login">
+             
+            
+            
             <div class="dados-login">
                 <div class="img-logo">
-                    <a href="home.html">
+                    <a href="C:\Users\a95675079\Desktop\Home\home.html">
                         <img src="https://i.imgur.com/4ATQqbX.png" alt="Logo do site" class="logo-login">
                     </a>
                 </div>
@@ -21,12 +24,16 @@
 
                 <form action="#" method="POST" class="formulario">
                     <label for="email">Email ou CPF:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu email" required aria-label="Digite seu email">
+                    <input type="email" id="email" name="email" placeholder="Digite seu email ou cpf" required aria-label="Digite seu email">
 
                     <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required aria-label="Digite sua senha">
-
-                    <a href="#" class="recuperar-senha" title="Recuperar senha">Esqueceu sua senha?</a>
+                    <div class="senha-container">
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required aria-label="Digite sua senha">
+                        <span class="show-password" onclick="myFunction()">
+                            <i id="eye-icon" class="fas fa-eye-slash"></i>
+                        </span>
+                    </div>                    
+                    <a href="recuperar.html" class="recuperar-senha" title="Recuperar senha">Esqueceu sua senha?</a>
                     
                     <button type="submit" class="entrar">Login</button>
 
@@ -34,11 +41,11 @@
                         <p>Ou Continue</p>
                     </div>
                     <div class="google">
-                        <img src="Google_Icons-09-512.webp" alt="" style="width: 20px; height: 20px; margin-right: 10px;" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt=""style="width: 20px; height: 20px; margin-right: 10px;" >
                         Google
                     </div>
                     <div class="ja">
-                        <p>Ainda não possui uma conta?<a class="crie" href="">Crie já</a></p>
+                        <p>Ainda não possui uma conta?<a class="crie" href="C:\Users\a95675079\Desktop\cadastro\Cadastro.html">Crie já</a></p>
                     </div>
                     
                 </form>

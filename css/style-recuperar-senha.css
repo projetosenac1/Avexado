@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-image: linear-gradient(to right, rgba(255, 177, 47, 100), rgba(250, 129, 47, 100));
+}
+
+.tela-recuperar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+.tela-recuperar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    z-index: -1; 
+}
+
+.dados-recuperar {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus {
+    border-color: #FAB12F;
+    box-shadow: 0 0 5px rgba(250, 177, 47, 0.5);
+}
+
+button.entrar {
+    background-color: #FAB12F;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+button.entrar:hover {
+    background-color: #f87a00;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+    border: 2px solid #FAB12F;
+}
+
+.ja {
+    padding-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.crie {
+    color: #2494ED;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.crie:hover {
+    color: #FAB12F;
+}
+
+.img-logo a {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.logo-recuperar {
+    width: 150px;
+    margin: 0 auto;
+    transition: width 0.3s ease;
+}
+
+.logo-recuperar:hover {
+    width: 160px;
+}
+
+@media (max-width: 768px) {
+    .dados-recuperar {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input[type="email"] {
+        font-size: 14px;
+    }
+
+    button.entrar {
+        font-size: 16px;
+    }
+
+    .logo-recuperar {
+        width: 120px;
+    }
+}

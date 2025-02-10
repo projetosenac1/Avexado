@@ -46,10 +46,10 @@ html {
 
 label {
     text-align: left;
-    width: 100%;
+    width: 60%;
     margin-bottom: 5px;
-
-
+    
+    
 }
 
 .tela-login {
@@ -74,9 +74,11 @@ label {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-right: 30px;
-    padding-left: 130px;
+    padding-left: 0px;
+    margin-left: 80px;
 }
+
+
 
 h2 {
     font-size: 2rem;
@@ -91,9 +93,10 @@ p {
 }
 
 form {
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 input,
@@ -114,10 +117,7 @@ input[type="password"] {
 }
 
 button.entrar {
-    margin-left: auto;
-    margin-right: auto;
     background-color: #FAB12F;
-    width: 70%;
     height: 50px;
     cursor: pointer;
     border: none;
@@ -208,8 +208,6 @@ input:focus {
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
 }
 .ja{
     padding: 10px;
@@ -220,3 +218,31 @@ input:focus {
     color: rgba(36, 116, 237, 0.8);
 }
 
+.senha-container {
+    position: relative;
+    width: 137%;
+
+}
+
+input[type="password"] {
+    width: 45%;
+    padding: 10px 15px;
+    padding-right: 35px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.show-password {
+    position: absolute;
+    left: 68%;
+    top: 50%;
+    transform: translateY(-80%);
+    cursor: pointer;
+}
+
+.fas.fa-eye, .fas.fa-eye-slash {
+    font-size: 18px;
+    color: #333;
+}

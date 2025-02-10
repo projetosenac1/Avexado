@@ -1,48 +1,35 @@
-<html>
+<html lang="pt-br">
     <head>
-        <title>Login</title>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="css/style-login.css">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Recuperação de Senha</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style-recuperar-senha.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
-
     <body>
 
-        <div class="tela-recuperacao">
-            <div class="img-logo">
-                <a href="home.html"><img src="https://i.imgur.com/4ATQqbX.png" alt="" class="logo-login"></a>
-            </div>
-            
-            <div class="dados-login-recuperacao">
-                
-                <h2>
-                    Recupere sua senha
-                </h2>
-                <p>
-                    Por favor, coloque suas informações de login abaixo
-                </p>
-
-                <form action="" class="formulario">
-                    <label for="fname">Email ou CPF:</label><br>
-                    <input type="email" id="fname" name="fname"><br>
-                    <input type="submit" value="Login" class="entrar"> 
-                    
-                </form> 
-
-            </div>
-
-            <!-- <div class="img-login">
-                <img src="https://i.imgur.com/ZuKjr33.png" alt="" class="imagem-meio-login">
-            </div>
-
-            <div class="slide-login">
-                
-                <div class="slide-1">
-
+        <div class="tela-recuperar">
+            <div class="dados-recuperar">
+                <div class="img-logo">
+                    <a href="C:\Users\a95675079\Desktop\Home\home.html">
+                        <img src="https://i.imgur.com/4ATQqbX.png" alt="Logo do site" class="logo-recuperar">
+                    </a>
                 </div>
-            </div> -->
+                <h2>Recupere sua Senha</h2>
+                <p>Por favor, informe o seu email ou CPF para enviarmos as instruções de recuperação.</p>
 
+                <form action="#" method="POST" class="formulario">
+                    <label for="email">Email ou CPF:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email ou cpf" required aria-label="Digite seu email">
+
+                    <button type="submit" class="entrar">Enviar email</button>
+                    <div class="ja">
+                        <p>Lembrou sua senha? <a class="crie" href="login.html">Faça login</a></p>
+                    </div>
+                </form>
+            </div>
         </div>
-        
+
     </body>
 </html>
