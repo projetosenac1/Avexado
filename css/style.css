@@ -79,6 +79,7 @@ a{
     border-radius: 10px;
     font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 }
 
 .cont-banner-home{
@@ -86,6 +87,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .valores-emp{
@@ -329,3 +331,26 @@ a{
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
   /* Kauã Novo */
+
+  @media screen and (max-width: 992px) {
+    .cadastre-se {
+      width: 25%;
+    }
+
+    .img-banner{
+        width: 100%;
+        font-size: 18px;
+        
+    }
+
+    .valor-emp{
+        width: 30%;
+        font-size: 19.5px;
+    }
+    
+    .links-menu-superior{
+        width: 100%;
+    }
+
+  }
+

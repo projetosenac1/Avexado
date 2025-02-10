@@ -179,3 +179,21 @@ a{
 .rodape-page{
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 992px) {
+    .menu-superior{
+        width: 100%;
+    }
+
+    .termos{
+        font-size: 13px;
+    }
+
+    .letras{
+        font-size: 17px;
+    }
+
+    .Titulo{
+        font-size: 25px;
+    }
+  }

@@ -31,7 +31,7 @@ a{
 }
 
 .links-menu-superior{
-    width: 70%;
+  width: 70%;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -403,3 +403,57 @@ html, body {
     border-width: 2px;
 }
 
+@media screen and (max-width: 992px) {
+    .menu-superior{
+        width: 100%;
+    }
+
+    .a{
+        
+        margin: 10px
+    }
+    
+
+    .perfil{
+        flex-direction: column-reverse;
+        
+    }
+
+    .pedro_alves_img{
+        margin-top: 45px;
+    }
+
+    .nome{
+        margin-left: 30px;
+    }
+
+    .esquerda{
+        width: 100%;
+    }
+
+    .direita{
+       width: 100%; 
+    }
+
+    .container{
+        width: 35%;
+    }
+
+    .sobrenos{
+        font-size: 10px;
+    }
+
+    .contato{
+        font-size: 10px;
+    }
+
+    .política{
+        font-size: 10px;
+    }
+
+    .termo{
+        font-size: 10px;
+    }
+
+
+}
