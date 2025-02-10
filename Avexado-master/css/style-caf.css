@@ -246,8 +246,22 @@ a{
     height: 170%;
 }
 
+
+@media screen and (max-width: 375px) {
+    .backgroud{
+        height: 5%;
+    }
+}
+
+
 @media screen and (max-width: 992px) {
     .menu-superior{
         width: 100%;
     }
+
+    .background{
+        height: 180%;
+    }
+
 }
+

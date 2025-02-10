@@ -236,7 +236,13 @@ a{
     .menu-superior{
         width: 100%;
     }
+
     .img-banner{
         width: 35%;
+    }
+
+    .links-menu-superior{
+        width: 100%;
+        justify-content: space-between(13px);
     }
 }
