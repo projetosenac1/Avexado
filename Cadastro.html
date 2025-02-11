@@ -1,27 +1,3 @@
-<?php
-
-     if(isset($_POST['submit'])){
-    
-        print_r('Nome: '. $_POST['nome']);
-        print_r('<br>');
-        print_r('email: '.$_POST['email']);
-        print_r('<br>');
-        print_r('telefone: '.$_POST['telefone']);
-        print_r('<br>');
-
-        include_once('config.php');
-
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $telefone = $_POST['telefone'];
-        $data_nasc = $_POST['data_nasc'];
-        $senha = $_POST['senha'];
-
-        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, telefone, data_nasc, senha) VALUES ($nome, $email, $telefone, $data_nasc,$senha)");
-    }
-
-?>
-
 <html>
     <head>
         <title>Cadastro</title>
