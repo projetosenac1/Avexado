@@ -345,6 +345,11 @@ a{
     margin-left: 585px;
     background-color: #FAB12F;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    
 }
   /* Kauã Novo */
 
