@@ -3,6 +3,25 @@
         <title>Avexado</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/style-cookies.css">
+        <script>
+            function salvarPreferencias() {
+                // Obtendo os valores dos checkboxes
+                var necessaryCookies = document.getElementById('necessaryCookies').checked;
+                var performanceCookies = document.getElementById('performanceCookies').checked;
+                var functionalCookies = document.getElementById('functionalCookies').checked;
+                var advertisingCookies = document.getElementById('advertisingCookies').checked;
+
+                // Salvando as preferências no localStorage (simulação de "salvar")
+                localStorage.setItem('necessaryCookies', necessaryCookies);
+                localStorage.setItem('performanceCookies', performanceCookies);
+                localStorage.setItem('functionalCookies', functionalCookies);
+                localStorage.setItem('advertisingCookies', advertisingCookies);
+
+                // Exibindo a mensagem de sucesso
+                document.getElementById('msgSucesso').style.display = 'block';
+                document.getElementById('okButton').style.display = 'block';
+            }
+        </script>
     </head>
 
     <body>
@@ -16,14 +35,14 @@
                         <div id="divBusca">
                             <input type="text" id="txtBusca" placeholder="Buscar..."/>
                         </div>
-                        <a href="SobreNos.html">Sobre Nós</a class = "sobrenos">
-                        <a href="Contato.html">Contato</a class = "contato">
-                        <a href="Politica.html">Política e Privacidade</a class = "Politica">
-                        <a href="termos.html">Termos de Serviços</a class = "termos">
+                        <a href="SobreNos.html">Sobre Nós</a class="sobrenos">
+                        <a href="Contato.html">Contato</a class="contato">
+                        <a href="Politica.html">Política e Privacidade</a class="Politica">
+                        <a href="termos.html">Termos de Serviços</a class="termos">
                     </div>
                     <div class="botoes-menu">
                         <a href="Login.html" class="entre">Entre</a>
-                        <a href="Cadastro.php" class="cadastro">Cadastre-se</a>
+                        <a href="Cadastro" class="cadastro">Cadastre-se</a>
                     </div>
                 </div>
             </nav>
@@ -37,7 +56,7 @@
                 <p>Este site utiliza cookies para melhorar a experiência de navegação, personalizar conteúdo e anúncios, fornecer recursos de mídia social e analisar o tráfego do site. Você pode controlar o uso de cookies de acordo com sua preferência, clicando nas opções abaixo.</p>
 
                 <h2>Categorias de Cookies</h2>
-                <form action="gerenciar-cookies.php" method="POST" class = "formulario">
+                <form action="gerenciar-cookies.php" method="POST" class="formulario">
                     <ul>
                         <li>
                             <label>
@@ -70,15 +89,23 @@
                     </ul>
 
                     <div class="btn-container">
-                        <button type="submit" class="btn">Salvar Preferências</button>
+                        <!-- Botão "Salvar Preferências" com JavaScript -->
+                        <button type="button" class="btn" onclick="salvarPreferencias()">Salvar Preferências</button>
                         <button type="button" class="btn" onclick="document.getElementById('necessaryCookies').checked=true; document.getElementById('performanceCookies').checked=true; document.getElementById('functionalCookies').checked=true; document.getElementById('advertisingCookies').checked=true;">Aceitar Todos os Cookies</button>
                         <button type="button" class="btn" onclick="document.getElementById('performanceCookies').checked=false; document.getElementById('functionalCookies').checked=false; document.getElementById('advertisingCookies').checked=false;">Recusar Todos os Cookies Não Essenciais</button>
                     </div>
                 </form>
 
+                <!-- Mensagem de Sucesso -->
+                <div id="msgSucesso" style="display: none; text-align: center;">
+                    <p>Preferências salvas com sucesso!</p>
+                    <!-- Botão OK para redirecionar para a página home.html -->
+                    <a href="home.html"><button class="btn">OK</button></a>
+                </div>
+
                 <div class="footer-links">
-                    <p>Para mais informações sobre o uso de cookies e como protegemos seus dados, consulte nossa <a href="politica-privacidade.html">Política de Privacidade</a>.</p>
-                    <p>Você pode alterar suas preferências de cookies a qualquer momento clicando <a href="gerenciar-cookies.html">aqui</a>.</p>
+                    <p>Para mais informações sobre o uso de cookies e como protegemos seus dados, consulte nossa <a href="Politica.html">Política de Privacidade</a>.</p>
+                    <p>Você pode alterar suas preferências de cookies a qualquer momento clicando <a href="App.html">aqui</a>.</p>
                 </div>
             </div>
         </div>
@@ -90,7 +117,7 @@
                         <a href="SobreNos.html" class="rodape-page">Quem somos</a>
                         <a href="" class="rodape-page">Vagas</a>
                         <a href="Contato.html" class="rodape-page">Contatos</a>
-                        <a href="" class="rodape-page">Relações com  investidores</a>
+                        <a href="" class="rodape-page">Relações com investidores</a>
                         <a href="App.html" class="rodape-page">App AVEXADO!</a>
                         <a href="App.html" class="rodape-page">Afiliados</a>
                     </div>
@@ -99,13 +126,13 @@
                         <a href="Comoavexadofunciona.html" class="rodape-page">Como AVEXADO funciona</a>
                         <a href="" class="rodape-page">Condições de uso</a>
                         <a href="" class="rodape-page">Informações de uso</a>
-                        <a href="cookies.html" class="rodape-page">Preferencias de cookies</a>
+                        <a href="cookies.html" class="rodape-page">Preferências de cookies</a>
                         <a href="Aviso.html" class="rodape-page">Aviso de Privacidade</a>
                     </div>
                 </div>
                 <div class="cadastro-rodape">
                     <p class="p-rodape">
-                        Procura otimos serviços para seus projetos?<br>
+                        Procura ótimos serviços para seus projetos?<br>
                         inscreva-se em nosso site.
                     </p>
                     <div class="inscreva-se-rodape">
@@ -115,20 +142,18 @@
                     <div class="redes-sociais">
                         <div>
                             <div>
-                            <a href="https://www.instagram.com/avexado" class="instagram">
-                                <img src="https://i.imgur.com/BTHF2BK.png" alt="" class="icon-rede-social">
-                                <p>@Avexado!</p>
-                            </a>
+                                <a href="https://www.instagram.com/avexado" class="instagram">
+                                    <img src="https://i.imgur.com/BTHF2BK.png" alt="" class="icon-rede-social">
+                                    <p>@Avexado!</p>
+                                </a>
                             </div>
-                            
-                            <div>
+                             <div>
                                 <a href="tel:+4733378901" class="wpp">
                                     <img src="https://i.imgur.com/IbdcaaC.png" alt="" class="icon-rede-social">
                                     <p>+47 333 78 901</p>
                                 </a>
                             </div>
                         </div>
-                        
                         <div>
                             <div>
                                 <a href="https://gmail.com" class="email">
@@ -136,7 +161,6 @@
                                     <p>avexado.negocios01@gmail.com</p>
                                 </a>
                             </div>
-    
                             <div>
                                 <a href="https://youtube.com" class="youtube">
                                     <img src="https://i.imgur.com/2zcQTmm.png" alt="" class="icon-rede-social">
@@ -144,7 +168,6 @@
                                 </a>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
