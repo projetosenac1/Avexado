@@ -259,6 +259,7 @@ a{
     margin: 10px;
     text-align: center;
     border-radius: 20px 20px 20px 20px;
+    transform: translate(-20px , 0px);
   }
   .btn {
     width: 150px;
